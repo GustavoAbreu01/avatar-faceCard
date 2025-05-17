@@ -250,7 +250,7 @@ export default function Home() {
         </h1>
         <WritingText
           className="text-lg font-normal text-gray-200 lg:text-xl"
-          text="Ensinando Dev's a aprenderem a se expressar."
+          text="Ensinando Dev's a se expressarem, para retornarem a sociedade."
           spacing={9}
         />
       </div>
