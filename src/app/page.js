@@ -162,7 +162,7 @@ export default function Home() {
       {status === 'lost' && showLossModal && (
         <div className="fixed inset-0 flex items-center justify-center z-50 animate-fade">
           <div className="bg-gray-700 p-8 rounded-lg shadow-2xl text-center space-y-4">
-            <h2 className="text-2xl text-white font-bold">Você "Dev" se isolar!!</h2>
+            <h2 className="text-2xl text-white font-bold">Você <span className="font-(--color_1)">Dev</span> se isolar!!</h2>
             <button
               onClick={startGame}
               className="px-6 py-2 bg-[var(--color_1)] font-bold text-white rounded"
@@ -222,7 +222,7 @@ export default function Home() {
       <div className="fixed inset-0 flex items-center justify-center text-white p-3 rounded-md">
         {status === 'finished' && (
           <div className="bg-gray-700 p-8 rounded-lg shadow-2xl text-center space-y-4">
-            <h2 className="text-2xl text-white font-bold">Você está livre para conviver em sociedade!!</h2>
+            <h2 className="text-2xl text-white font-bold">Você está permitido a conviver em sociedade!!</h2>
             <button
               onClick={startGame}
               className="px-6 py-2 bg-[var(--color_1)] font-bold text-white rounded"
@@ -235,7 +235,7 @@ export default function Home() {
       </div>
       {status !== 'playing' && status === 'ready' && (
         <div className="absolute right-85 bottom-30 animate-pulse bg-gray-700 px-4 py-2 rounded-md gap-2 text-white flex items-center shadow-xl">
-          <p className="font-bold">"Click"</p>
+          <p className="font-bold">Click</p>
           <FaArrowRight />
         </div>
       )}
